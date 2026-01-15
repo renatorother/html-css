@@ -1,0 +1,7 @@
+x = int(input('Insira um número inteiro de 0 a 100:' + ' '))
+y = int(input('Insira um número inteiro de 0 a 100:' + ' '))
+
+if (x > y):
+    print('O PRIMEIRO valor é MAIOR que o segundo')
+else:
+    print('O SEGUNDO valor é MAIOR que o primeiro')   

@@ -1,0 +1,21 @@
+operacao = (input('Qual opeção deseja realizar? + , - , * ou / :'))
+num1 = float(input('Digite um valor, inteiro ou não:'))
+num2 = float(input('Digite um valor, inteiro ou não:'))
+
+if operacao == '+':
+    print(num1 + num2)
+
+elif operacao == '-':
+    print(num1 - num2)
+
+elif operacao == '*':
+    print(num1 * num2)
+
+elif operacao == '/':
+    print(num1 / num2)
+
+
+
+
+
+

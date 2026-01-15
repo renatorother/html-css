@@ -1,0 +1,20 @@
+print('Escolha qual produto deseja comprar: ')
+print('1 - Banana')
+print('2 - Laranja')
+print('3 - Maçã')
+
+produto = int(input('Digite o número do produto que deseja comprar: '))
+quantidade = int(input('Digite a quantidade que você deseja comprar: '))
+
+if produto == 1:
+    preco = quantidade * 2
+    print(f'Você comprou {quantidade} unidade(s), o valor da compra é de R${preco} reais')
+
+elif produto == 2:
+    preco = quantidade * 2.5
+    print(f'Você comprou {quantidade} unidade(s), o valor da compra é de R${preco} reais')
+
+elif produto == 3:
+    preco = quantidade * 3
+    print(f'Você comprou {quantidade} unidade(s), o valor da compra é de R${preco} reais')
+

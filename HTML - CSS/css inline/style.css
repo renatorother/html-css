@@ -1,0 +1,61 @@
+@charset "UTF-8";
+
+
+@font-face {
+    font-family: 'NotoSansMono' ;
+    src: url(Noto_Sans_Mono/NotoSansMono-Regular.ttf) format('truetype');
+}
+
+*{
+    font-family: 'NotoSansMono';
+}
+
+
+    p { 
+        text-align: justify;
+        text-indent: 30px;
+    }  
+
+    body {
+        background-image: linear-gradient(to right, #ffffec, #ffe7d4);
+    }
+
+
+    main {
+        background-color: aliceblue;
+        width: 600px;
+        padding: 10px;
+        margin: auto;
+        border-radius: 10px;
+        box-shadow: 5px 5px 20px #e2b796;
+    }
+
+    h1 {
+        color: #004e89;
+        text-align: center;
+        text-shadow: 3px 3px 5px rgb(224, 224, 224);
+    }
+
+    h2 {
+        color: #ff6b35;
+        text-align: left;
+    }
+
+    div{
+        display: inline-block;
+        width: 130px;
+        height: auto;
+        font-size: 13px;
+        border: 2px solid wheat;
+    }
+
+    div > p{
+        display: none;
+    }
+
+    div:hover > p{
+        background-color: #004e89;
+        color: aliceblue;
+        display: block;
+    }
+

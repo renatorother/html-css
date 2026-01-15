@@ -1,0 +1,28 @@
+
+    p {
+        text-align: center; /*COMENTÁRIO*/
+        color: violet;        
+    }
+
+    .p {
+        text-align: center;
+        color: blue;
+    }
+
+    #p {
+        text-align: center;
+        color: red;
+    }
+
+    * {
+        text-align: left;
+        color: greenyellow;
+    }
+
+    #k {text-align: justify;
+        color: brown;    
+    }
+
+    div {
+       background-color: black; margin: 30px; padding: 30px; color: red; border: 30px; 
+    }

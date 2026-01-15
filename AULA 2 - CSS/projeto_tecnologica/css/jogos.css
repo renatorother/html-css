@@ -1,0 +1,83 @@
+/*
+******FORMATAÇÃO GERAL******
+*/
+body{
+    background: #e7e7e7;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/*
+******HEADER******
+*/
+#header{
+    background: #0066CC;
+    padding: 10px;
+    text-align: center;
+    color: white;
+    margin: 0px 0px 50px;
+}
+
+#h1-header{
+    padding: 10px;
+    font-size: 40px;
+}
+
+#p-header{
+    padding: 15px;
+    font-size: 20px;
+}
+
+#black{
+    color: black;
+}
+
+
+/*
+******GAMES******
+*/
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    padding: 15px;
+}
+
+
+.gamethumb{
+    background: rgb(255, 255, 255);
+    width: 200px;
+    height: 380px;
+    padding: 15px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+
+.gamename{
+    font-size: 20px;
+    padding: 15px;
+    color: #0066CC;
+}
+
+/*
+****** FOOTER ******
+*/
+
+.footer{
+    padding: 20px;
+    margin: 50px 0px 0px;
+    background: white;
+    text-align: center;
+    color: black;
+    font-size: 20px;
+
+}
+
+

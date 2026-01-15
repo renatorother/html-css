@@ -1,0 +1,11 @@
+nome = input('Digite seu nome: ')
+idade = int(input('Digite sua idade: '))
+
+if nome == 'Renato':
+    print('Olá, Renato!')
+
+elif idade < 18:
+    print('Acesso negado, você é menor de idade!')
+
+elif idade > 18:
+    print('Acesso negado!')

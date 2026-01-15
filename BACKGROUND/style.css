@@ -1,0 +1,95 @@
+*{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+body{
+    margin: 0px;
+    padding: 0px;
+}
+
+main{
+    background-color: aliceblue;
+    padding: 20px;
+}
+
+.container{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   margin: 10px;
+   gap: 10px;
+}
+
+div.quadrado {
+    display: inline-block; 
+    border: 1px solid black;
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+    background-image: url(wallpaper003.jpg);
+}
+
+div.content{
+
+    /*
+    
+    background-image: url(wallpaper002.jpg);
+    padding: 20px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+
+    */
+
+    /*
+
+    --------> SHORT HAND BACKGROUND
+    color > image > position > repeat > attachment
+
+    background: black url(wallpaper002.jpg) center center no-repeat cover fixed
+
+    */
+
+    background: black url(wallpaper002.jpg) center center no-repeat fixed;
+    background-size: cover;
+    padding: 20px;    
+}
+
+
+
+
+
+div#iq5{
+    background-color: whitesmoke;
+    width: 50%;
+    text-align: center;
+    margin: auto;
+    border-radius: 10px;
+    padding: 20px;
+    color: rgb(78, 55, 55);
+    border: 1px solid grey;
+}
+
+
+
+#q1{
+    background-position: top left;
+}
+
+#q2{
+    background-position: top right;
+}
+
+#q3{
+    background-position: bottom left;
+}
+
+#q4{
+    background-position: bottom right;
+}
+
+#q5{
+    background-position: center;
+    width: 410px;
+}
+
