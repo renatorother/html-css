@@ -7,37 +7,133 @@
 </head>
 <body>
     <h1>Teste de Formulário</h1>
+
     <form action="cadastro.php" method="post">
         
+    <fieldset>
         <p>
+            <!---TYPE TEXT-->
             <label for="inome">Nome:</label>
             <input type="text" name="nome" id="inome" required maxlength="30" placeholder="nome completo" autocomplete="name">
         </p>
-
         <p>
-        <label for="imedia">Média:</label>
-        <input type="number" name="media" id="imedia" required autocomplete="off" min="0" max="10" placeholder="0 a 10" step="0.1">
+            <!---TYPE NUMBER-->
+            <label for="imedia">Média:</label>
+            <input type="number" name="media" id="imedia" required autocomplete="off" min="0" max="10" placeholder="0 a 10" step="0.1">
         </p>
         
         <p>
+            <!---TYPE MONTH-->
             <label for="imes">Período Letivo:</label>
             <input type="month" name="mes" id="imes" required value="2025-06">
         </p>
-
         <p>
+            <!---TYPE DATE-->
             <label for="idia">Dia da Prova:</label>
             <input type="date" name="dia" id="idia" value="2025-06-29">
         </p>
-
-         <p>
+            <p>
+            <!---TYPE TIME-->
             <label for="ihora">Hora da Prova:</label>
             <input type="time" name="hora" id="ihora">
         </p>
-
+        
         <p>
-            <input type="submit" value="Enviar">
-            <input type="reset" value="Limpar">
+            <!---TYPE EMAIL-->
+            <label for="iemail">Email:</label>
+            <input type="email" name="email" id="iemail" placeholder="Digite seu melhor email">
         </p>
+        <p>
+            <!---TYPE TEL-->
+            <label for="itel">Telefone:</label>
+            <input type="tel" name="tel" id="itel">
+        </p> 
+    </fieldset>
+
+
+    <p>
+        <fieldset>
+                <!---TYPE CHECK BOX-->
+                <legend>Esportes Favoritos</legend>
+                <input type="checkbox" name="esportes" id="es1"><label for="es1">Opção 1</label> <!-- <br>  -->      
+                <input type="checkbox" name="esportes" id="es2"><label for="es2">Opção 2</label> <!-- <br>  -->      
+                <input type="checkbox" name="esportes" id="es3"><label for="es3">Opção 3</label> <!-- <br>  -->      
+                <input type="checkbox" name="esportes" id="es4"><label for="es4">Opção 4</label> <!-- <br>  -->      
+                <input type="checkbox" name="esportes" id="es5"><label for="es5">Opção 5</label> <!-- <br>  -->      
+        </fieldset>
+    </p>
+
+    <p>
+        <fieldset>
+            <!---TYPE RADIO-->
+            <legend>Sexo</legend>
+            <input type="radio" name="sexo" id="imasc" checked><label for="imasc">Masculino</label><br>
+            <input type="radio" name="sexo" id="ifem"><label for="ifem">Feminio</label>
+        </fieldset>
+    </p>
+
+    <p>
+        <!---TYPE COLOR-->
+        <input type="color" name="cor" id="icor" value="#00ff00">
+    </p>
+
+    <p>
+        <!---TYPE RANGE-->
+        <input type="range" name="range" id="irange" min="1" max="5" value="5">
+    </p>
+
+    <p>
+        <!---TYPE FILE-->
+        <input type="file" name="file" id="ifile">
+    </p>
+
+    <p>
+        
+    </p>
+
+    <p>
+        <label for="iestado">Estado:</label>
+        <!---SELECT / OPTIONS-->
+        <select name="estado" id="iestado">
+            <option value="" selected>--- Escolha seu Estado ---</option>
+
+            <optgroup label="Região Sudeste">
+            <option value="sp">São Paulo</option>
+            <option value="rj">Rio de Janeiro</option>
+            <option value="mg">Minas Gerais</option>
+            </optgroup>
+
+            <optgroup label="Região Nordeste">
+            <option value="sp">São Paulo</option>
+            <option value="rj">Rio de Janeiro</option>
+            <option value="mg">Minas Gerais</option>
+            </optgroup>
+        </select>
+    </p>
+
+
+    <p>
+         <!---DATALIST-->
+        <input type="text" name="prof" id="iprof" list="lstprof">
+        <datalist id="lstprof">
+            <option>Desenvolvedor</option>
+            <option>Contabilista</option>
+            <option>Professor</option>
+        </datalist>
+    </p>
+
+    <p>
+        <!---TEXTAREA-->
+        <textarea name="msg" id="imsg" cols="100" rows="10"></textarea>
+    </p>
+        
+
+
+    <p>
+        <!---BOTÕES-->
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Limpar">
+    </p>
 
        
 
