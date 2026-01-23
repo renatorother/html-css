@@ -1,0 +1,40 @@
+@charset "UTF-8";
+
+/* estilo para telas */
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+html{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 1em;
+}
+
+header{
+    background-color: lightblue;
+
+}
+
+header > h1 {
+    text-align: center;
+}
+
+menu ul{
+    list-style-type: none;
+    background-color: grey;
+
+}
+
+menu li{
+    display: inline-block;
+    background-color: bisque;
+    padding: 10px;
+}
+
+article{
+    width: 600px;
+    display: block;
+    margin: auto;
+}
