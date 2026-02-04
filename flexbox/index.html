@@ -5,26 +5,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FlexBox</title>
     <style>
+        
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+
         div.container{
-            background-color: lightsalmon;
+            background-color: lightsalmon;            
             display: flex ;
-            flex-direction: row;
+            flex-flow: row nowrap;
+            justify-content: center;
+            
+         
         }
 
         div.item{     
             background-color: lightskyblue;
             border: 1px solid black;
-            flex: auto;
+            text-align: center; 
+            flex-basis: 100px;
+            
         }
+
+        #b1{
+            flex-shrink: 1;
+            flex-grow: 0;
+        }
+
+        #b2{
+            flex-shrink: 0;
+            flex-grow: 1;
+        }
+
+        #b3{
+            flex-shrink: 2;
+            flex-grow: 2;
+        }
+
     </style>
 </head>
 <body>
     <div class="container">
-        <div class="item">A</div>
-        <div class="item">B</div>
-        <div class="item">C</div>
-        <div class="item">D</div>
-        <div class="item">E</div>
-        <div class="item">F</div>
-        <div class="item">G</div>
+        <div class="item" id="b1">BLOCO 1</div>
+        <div class="item" id="b2">BLOCO 2</div>
+        <div class="item" id="b3">BLOCO 3</div>
     </div>
+</body>
+</html>
