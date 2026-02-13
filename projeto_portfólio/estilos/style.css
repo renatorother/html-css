@@ -30,6 +30,9 @@ header{
   display: flex;
   justify-content: flex-end;
   align-content: center;
+  position: sticky;
+  top: 0;
+  z-index: 1;
 }
 
 nav#menu ul{
@@ -188,12 +191,13 @@ article h2{
   border-radius: 8px;
   border-left: 5px solid var(--destaque-inverso);
   padding-left: 15px;
+  transition: 0.5s;
+
 }
 
 #formacao-container .curso:hover{
   border-left-width: 15px;
   border-color: var(--destaque);
-  transition: 0.5s;
 }
 
 #formacao-container .periodo{
@@ -207,8 +211,53 @@ article h2{
   font-size: 1.1em;
 }
 
+#projeto-container{
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 20px;
+}
+
+#projeto-container .projeto{
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  background-color: var(--fundo-principal);
+  padding: 10px;
+  border-radius: 8px;
+  border-left: 5px solid var(--destaque-inverso);
+  transition: 0.5s;
+}
+
+#projeto-container .projeto:hover{
+  border-color: var(--destaque);
+  border-left-width: 15px;
+}
+
+#projeto-container .foto{
+  width: 100%;
+  aspect-ratio: 16/9;
+  object-fit: cover;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
 @media screen and (min-width: 768px){
   #skill-container{
     grid-template-columns: 1fr 1fr;
+  }
+
+  #projeto-container .projeto{
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+
+  #projeto-container .projeto-info{
+    max-width: 80%;
+  }
+
+  #projeto-container .foto{
+    aspect-ratio: 1/1;
+    max-width: 20%;
+    max-height: 200px;
   }
 }
