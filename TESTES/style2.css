@@ -1,0 +1,30 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.titulo {
+    font-family: "Germania One", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+    margin: 10px;
+}
+
+hr {
+    margin: 10px;
+}
+
+h2 {
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner {
+    border-radius: 5px;
+}
